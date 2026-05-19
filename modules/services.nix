@@ -31,23 +31,4 @@
   services.zapret.enable = true;
   services.resolved.enable = true;
   services.netbird.enable = true;
-
-  # NixOS config backup to NAS
-  systemd.services.nixos-config-backup = {
-    description = "Backup NixOS config to NAS";
-    serviceConfig = {
-      Type = "oneshot";
-      User = "root";
-    };
-    script = ''
-      ${pkgs.rsync}/bin/rsync -av --exclude='nas-credentials' --exclude='hardware-configuration.nix' /etc/nixos/ /mnt/nas-backup/
-    '';
-  };
-  systemd.timers.nixos-config-backup = {
-    wantedBy = [ "timers.target" ];
-    timerConfig = {
-      OnCalendar = "hourly";
-      Persistent = true;
-    };
-  };
 }
