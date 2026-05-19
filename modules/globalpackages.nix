@@ -1,0 +1,68 @@
+{
+  pkgs,
+  helium,
+  kopuz,
+  ...
+}:
+
+{
+  environment.systemPackages = with pkgs; [
+    wget
+    curl
+    gnomeExtensions.gsconnect
+    gnomeExtensions.dash-to-dock
+    gnomeExtensions.blur-my-shell
+    gnomeExtensions.appindicator
+    gnomeExtensions.gamemode-shell-extension
+    gnome-themes-extra
+    adwaita-icon-theme
+    gnome-tweaks
+    gnome-session
+    gnome-software
+    steam-devices-udev-rules
+    gamemode
+    gamescope
+    lutris
+    libdecor
+    zed-editor
+    bitwarden-desktop
+    cifs-utils
+    rsync
+    vscodium
+    claude-code
+    opencode
+    git
+    netbird
+    netbird-ui
+    dig
+    wine-staging
+    fastfetch
+    hyfetch
+    vesktop
+    gh
+    python3
+    unzip
+    zip
+    gparted
+    binutils
+    usbutils
+    vim
+    file
+    android-tools
+    refind
+    winetricks
+    nixd
+    nil
+    distrobox
+    helium.packages.${system}.default
+    kopuz.packages.${system}.default
+  ];
+
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+    nerd-fonts.fira-code
+    noto-fonts
+    noto-fonts-cjk-sans
+    noto-fonts-color-emoji
+  ];
+}
