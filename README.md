@@ -1,4 +1,4 @@
-**xiaolong-nix**
+# **xiaolong-nix**
 
 Repo with configuration for my laptop.
 
