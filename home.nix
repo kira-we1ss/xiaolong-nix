@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "kweiss";
@@ -29,7 +29,6 @@
       rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#xiaolong-nix";
       update = "sudo nix flake update --flake /etc/nixos && rebuild";
       cleanup = "sudo nix-collect-garbage -d";
-      update-ttl = "bash /etc/nixos/twintaillauncher/update.sh";
     };
     interactiveShellInit = ''
       hyfetch

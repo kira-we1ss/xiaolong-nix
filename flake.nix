@@ -1,5 +1,5 @@
 {
-  description = "xiaolong-nix system flake";
+  description = "xiaolong system flake";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
