@@ -26,8 +26,8 @@
     enable = true;
     shellAliases = {
       zed = "zeditor";
-      rebuild = "sudo nixos-rebuild switch --flake /etc/nixos#xiaolong-nix";
-      update = "sudo nix flake update --flake /etc/nixos";
+      rebuild = "sudo nixos-rebuild switch --flake path:/etc/nixos#xiaolong-nix";
+      update = "sudo nix flake update --flake path:/etc/nixos";
       cleanup = "sudo nix-collect-garbage -d";
     };
     interactiveShellInit = ''
