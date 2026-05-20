@@ -56,6 +56,7 @@
     distrobox
     helium.packages.${system}.default
     kopuz.packages.${system}.default
+    cloc
   ];
 
   fonts.packages = with pkgs; [
