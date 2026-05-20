@@ -57,6 +57,7 @@
     helium.packages.${system}.default
     kopuz.packages.${system}.default
     cloc
+    poedit
   ];
 
   fonts.packages = with pkgs; [
