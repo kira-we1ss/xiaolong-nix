@@ -1,0 +1,21 @@
+name: Check NixOS config
+
+on: [push]
+
+jobs:
+  check:
+    runs-on: nix-flakes
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Evaluate flake (no build)
+        run: nix flake check --no-build --keep-going
+
+      - name: Dry-build nixosConfiguration
+        run: |
+          nixos-rebuild dry-build --flake .#xiaolong-nix 2>&1 | tee build.log
+          grep -i "warning\|error" build.log
+
+      - name: Post-check cleanup
+        run: |
+          nix-collect-garbage -d
