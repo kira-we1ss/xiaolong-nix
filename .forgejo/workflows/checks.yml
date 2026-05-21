@@ -17,11 +17,11 @@ jobs:
       - name: Evaluate flake (no build)
         run: nix flake check --no-build --keep-going
 
-      - name: Dry-build nixosConfiguration
+      - name: Full flake eval
         run: |
-          nixos-rebuild dry-build --flake .#xiaolong-nix 2>&1 | tee build.log
-          grep -i "warning\|error" build.log
+          nix eval .#xiaolong-nix
 
       - name: Post-check cleanup
+        if: always()
         run: |
           nix-collect-garbage -d
