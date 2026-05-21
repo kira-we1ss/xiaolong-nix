@@ -17,9 +17,9 @@ jobs:
       - name: Evaluate flake (no build)
         run: nix flake check --no-build --keep-going
 
-      - name: Full flake eval
+      - name: Full nixosConfiguration eval
         run: |
-          nix eval .#xiaolong-nix
+          nix eval .#nixosConfigurations.xiaolong-nix.config.system.build.toplevel
 
       - name: Post-check cleanup
         if: always()
