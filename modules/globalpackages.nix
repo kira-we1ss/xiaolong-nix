@@ -59,6 +59,8 @@
     cloc
     poedit
     cider-2
+    gpg-tui
+    kdePackages.kleopatra
   ];
 
   fonts.packages = with pkgs; [
