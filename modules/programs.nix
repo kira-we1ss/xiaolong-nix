@@ -18,6 +18,12 @@
     enable = true;
     capSysNice = true;
   };
+
+  programs.gnupg.agent = {
+    enable = true;
+    pinentryPackage = pkgs.pinentry-all;
+  };
+
   programs.ssh.extraConfig = ''
     IdentityAgent ~/.bitwarden-ssh-agent.sock
   '';
