@@ -61,6 +61,7 @@
     cider-2
     kdePackages.kleopatra
     gnupg
+    pinentry-all
   ];
 
   fonts.packages = with pkgs; [
