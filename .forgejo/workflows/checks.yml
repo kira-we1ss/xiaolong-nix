@@ -1,12 +1,13 @@
 name: Check NixOS config
 
-on: [push]
+on:
+  workflow_dispatch:
+  push:
 
 jobs:
   check:
     runs-on: nix-flakes
     steps:
-
       - name: Install Node.js
         run: |
           nix profile install nixpkgs#nodejs
