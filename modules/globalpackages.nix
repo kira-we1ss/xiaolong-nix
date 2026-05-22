@@ -58,6 +58,7 @@
     kopuz.packages.${system}.default
     cloc
     poedit
+    cider-2
   ];
 
   fonts.packages = with pkgs; [
