@@ -38,5 +38,4 @@
   };
 
   programs.home-manager.enable = true;
-  programs.helium.enable = true;
 }
