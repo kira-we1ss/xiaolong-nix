@@ -10,7 +10,6 @@
     thunderbird
     qbittorrent
     signal-desktop
-    helium.packages.${system}.default
   ];
 
   # GNOME settings
