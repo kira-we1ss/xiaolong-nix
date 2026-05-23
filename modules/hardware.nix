@@ -10,4 +10,6 @@
       vulkan-extension-layer
     ];
   };
+  # Enable USB redirection
+  virtualisation.spiceUSBRedirection.enable = true;
 }

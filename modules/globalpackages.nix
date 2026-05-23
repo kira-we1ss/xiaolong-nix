@@ -62,6 +62,9 @@
     kdePackages.kleopatra
     gnupg
     pinentry-all
+    gnome-boxes
+    dnsmasq
+    phodav
   ];
 
   fonts.packages = with pkgs; [

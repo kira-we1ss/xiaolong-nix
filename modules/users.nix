@@ -27,4 +27,6 @@
       ];
     }
   ];
+  users.groups.libvirtd.members = [ "kweiss" ];
+  users.groups.kvm.members = [ "kweiss" ];
 }

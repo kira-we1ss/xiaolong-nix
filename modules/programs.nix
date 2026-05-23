@@ -57,4 +57,14 @@
   #    libdecor
   #  ];
   # };
+  virtualisation.libvirtd = {
+    enable = true;
+
+    # Enable TPM emulation
+    qemu = {
+      swtpm.enable = true;
+      ovmf.packages = [ pkgs.OVMFFull.fd ];
+    };
+  };
+
 }
