@@ -1,4 +1,4 @@
-{ pkgs, helium, ... }:
+{ pkgs, ... }:
 
 {
   home.username = "kweiss";
