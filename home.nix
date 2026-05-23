@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, helium, ... }:
 
 {
   home.username = "kweiss";
@@ -10,6 +10,7 @@
     thunderbird
     qbittorrent
     signal-desktop
+    helium.packages.${system}.default
   ];
 
   # GNOME settings
@@ -37,4 +38,5 @@
   };
 
   programs.home-manager.enable = true;
+  programs.helium.enable = true;
 }
