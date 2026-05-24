@@ -9,7 +9,7 @@
   home.packages = with pkgs; [
     thunderbird
     qbittorrent
-    signal-desktop
+    signal-desktop-bin
   ];
 
   # Fish aliases
