@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-  programs.dconf.enable = true;
   programs.firefox.enable = true;
   programs.fish.enable = true;
   programs.throne = {

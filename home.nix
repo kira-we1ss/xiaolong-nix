@@ -12,16 +12,6 @@
     signal-desktop
   ];
 
-  # GNOME settings
-  dconf.settings = {
-    "org/gnome/desktop/wm/preferences" = {
-      button-layout = "appmenu:minimize,maximize,close";
-    };
-    "org/gnome/desktop/interface" = {
-      color-scheme = "prefer-dark";
-    };
-  };
-
   # Fish aliases
   programs.fish = {
     enable = true;

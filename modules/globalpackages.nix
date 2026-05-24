@@ -9,16 +9,12 @@
   environment.systemPackages = with pkgs; [
     wget
     curl
-    gnomeExtensions.gsconnect
-    gnomeExtensions.dash-to-dock
-    gnomeExtensions.blur-my-shell
-    gnomeExtensions.appindicator
-    gnomeExtensions.gamemode-shell-extension
-    gnome-themes-extra
-    adwaita-icon-theme
-    gnome-tweaks
-    gnome-session
-    gnome-software
+    kdePackages.kdeconnect-kde
+    kdePackages.partitionmanager
+    kdePackages.krdc
+    kdePackages.kleopatra
+    kdePackages.kcalc
+    kdePackages.spectacle
     steam-devices-udev-rules
     gamemode
     gamescope
@@ -62,9 +58,6 @@
     kdePackages.kleopatra
     gnupg
     pinentry-all
-    gnome-boxes
-    dnsmasq
-    phodav
     krita
   ];
 

@@ -12,7 +12,6 @@
   };
   services.tuned.enable = true;
   services.power-profiles-daemon.enable = false;
-  services.gnome.gnome-remote-desktop.enable = true;
   virtualisation.docker.enable = true;
   # Audio
   services.pipewire = {

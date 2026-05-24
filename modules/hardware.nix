@@ -1,7 +1,6 @@
 { pkgs, ... }:
 
 {
-  hardware.opentabletdriver.enable = true;
   hardware.cpu.amd.updateMicrocode = true;
   hardware.graphics = {
     enable = true;
