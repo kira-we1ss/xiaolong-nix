@@ -54,8 +54,8 @@
     nixd
     nil
     distrobox
-    helium.packages.${system}.default
-    kopuz.packages.${system}.default
+    helium.packages.stdenv.hostPlatform.${system}.default
+    kopuz.packages.stdenv.hostPlatform.${system}.default
     cloc
     poedit
     cider-2
