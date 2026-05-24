@@ -34,7 +34,6 @@
     wine-staging
     fastfetch
     hyfetch
-    vesktop
     gh
     python3
     unzip
@@ -59,6 +58,7 @@
     gnupg
     pinentry-all
     krita
+    nix-output-monitor
   ];
 
   fonts.packages = with pkgs; [
