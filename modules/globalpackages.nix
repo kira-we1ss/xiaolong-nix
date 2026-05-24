@@ -65,6 +65,7 @@
     gnome-boxes
     dnsmasq
     phodav
+    krita
   ];
 
   fonts.packages = with pkgs; [
