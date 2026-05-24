@@ -35,4 +35,5 @@
   };
   systemd.services.fprintd.serviceConfig.ExecStart =
     lib.mkForce "${pkgs.fprintd}/libexec/fprintd --timeout -1";
+  security.pam.services.polkit-1.fprintAuth = true;
 }
