@@ -3,7 +3,7 @@
 {
   home.username = "kweiss";
   home.homeDirectory = "/home/kweiss";
-  home.stateVersion = "26.05";
+  home.stateVersion = "25.11";
 
   # User packages move here from configuration.nix
   home.packages = with pkgs; [

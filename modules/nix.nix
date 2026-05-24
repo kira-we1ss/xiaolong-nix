@@ -18,5 +18,5 @@
       "kopuz.cachix.org-1:J2X3AnAYhKTJW5S3aCLoA1ckonQXVNZMQvhZA0YAufw="
     ];
   };
-  system.stateVersion = "26.05";
+  system.stateVersion = "25.11";
 }
