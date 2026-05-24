@@ -30,4 +30,10 @@
   services.zapret.enable = true;
   services.resolved.enable = true;
   services.netbird.enable = true;
+  security.pam.services.kwallet = {
+    enable = true;
+    forceRun = true;
+  };
+  systemd.services.fprintd.serviceConfig.ExecStart =
+    lib.mkForce "${pkgs.fprintd}/libexec/fprintd --timeout -1";
 }
