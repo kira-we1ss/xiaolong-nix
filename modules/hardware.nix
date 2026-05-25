@@ -10,6 +10,8 @@
       vulkan-extension-layer
     ];
   };
+  hardware.bluetooth.enable = true;
+  hardware.bluetooth.powerOnBoot = true;
   # Enable USB redirection
   virtualisation.spiceUSBRedirection.enable = true;
 }
