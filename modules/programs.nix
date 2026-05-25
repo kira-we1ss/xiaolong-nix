@@ -29,7 +29,7 @@
   programs.ssh.extraConfig = ''
     IdentityAgent ~/.bitwarden-ssh-agent.sock
   '';
-  #programs.nix-ld = {
+  programs.nix-ld = true;
   #  enable = true;
   #  libraries = with pkgs; [
   #    glib
