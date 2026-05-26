@@ -60,6 +60,7 @@
     pinentry-all
     krita
     nix-output-monitor
+    socat
   ];
 
   fonts.packages = with pkgs; [
