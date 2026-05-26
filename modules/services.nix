@@ -36,6 +36,6 @@
   systemd.services.fprintd.serviceConfig.ExecStart =
     lib.mkForce "${pkgs.fprintd}/libexec/fprintd --timeout -1";
   security.pam.services.polkit-1.fprintAuth = true;
-  security.pam.services.kde.fprintAuth = true;
+  security.pam.services.kde.fprintAuth = pkgs.lib.mkForce true;
   security.pam.services.sudo.fprintAuth = true;
 }
