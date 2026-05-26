@@ -15,6 +15,7 @@
     kdePackages.kleopatra
     kdePackages.kcalc
     kdePackages.spectacle
+    kdePackages.plasma-workspace
     steam-devices-udev-rules
     gamemode
     gamescope
