@@ -10,6 +10,7 @@
     };
   };
   programs.gamemode.enable = true;
+  programs.kdeconnect.enable = true;
   programs.adb.enable = true;
   programs.helium.enable = true;
   programs.steam.enable = true;
