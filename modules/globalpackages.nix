@@ -62,6 +62,7 @@
     nix-output-monitor
     socat
     prismlauncher
+    xwayland-satellite
   ];
 
   fonts.packages = with pkgs; [
