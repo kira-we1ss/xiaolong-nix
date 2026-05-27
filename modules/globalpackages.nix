@@ -63,6 +63,7 @@
     socat
     prismlauncher
     xwayland-satellite
+    gparted
   ];
 
   fonts.packages = with pkgs; [
