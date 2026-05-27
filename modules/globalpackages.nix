@@ -61,6 +61,7 @@
     krita
     nix-output-monitor
     socat
+    prismlauncher
   ];
 
   fonts.packages = with pkgs; [
