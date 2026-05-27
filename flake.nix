@@ -58,7 +58,6 @@
           ./modules/users.nix
           ./modules/nix.nix
           ./modules/overlays.nix
-          ./modules/rocm.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
