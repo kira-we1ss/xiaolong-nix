@@ -8,6 +8,8 @@
     extraPackages = with pkgs; [
       vulkan-validation-layers
       vulkan-extension-layer
+      rocmPackages.clr.icd
+      rocmPackages.clr
     ];
   };
   hardware.bluetooth.enable = true;

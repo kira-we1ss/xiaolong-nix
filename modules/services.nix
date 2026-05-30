@@ -23,6 +23,19 @@
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
 
+  systemd.tmpfiles.rules =
+    let
+      rocmEnv = pkgs.symlinkJoin {
+        name = "rocm-combined";
+        paths = with pkgs.rocmPackages; [
+          rocblas
+          hipblas
+          clr
+        ];
+      };
+    in
+    [ "L+ /opt/rocm - - - - ${rocmEnv}" ];
+
   # System services
   services.fprintd.enable = true;
   services.flatpak.enable = true;

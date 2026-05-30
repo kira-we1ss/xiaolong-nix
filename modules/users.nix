@@ -9,6 +9,7 @@
       "networkmanager"
       "input"
       "video"
+      "render"
       "gamemode"
       "adbusers"
       "docker"
