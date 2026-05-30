@@ -9,6 +9,7 @@
   home.packages = with pkgs; [
     thunderbird
     qbittorrent
+    davinci-resolve
   ];
 
   # Fish aliases
