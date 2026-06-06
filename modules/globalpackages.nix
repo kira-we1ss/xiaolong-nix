@@ -64,6 +64,7 @@
     prismlauncher
     xwayland-satellite
     gparted
+    waywallen
   ];
 
   fonts.packages = with pkgs; [
