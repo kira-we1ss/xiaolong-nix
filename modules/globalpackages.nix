@@ -65,6 +65,7 @@
     xwayland-satellite
     gparted
     waywallen
+    wl-clipboard
   ];
 
   fonts.packages = with pkgs; [
