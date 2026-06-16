@@ -68,6 +68,7 @@
     wl-clipboard
     jellyfin-desktop
     jellyfin-rpc
+    discord
   ];
 
   fonts.packages = with pkgs; [
