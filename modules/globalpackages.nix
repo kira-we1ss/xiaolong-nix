@@ -66,6 +66,8 @@
     gparted
     waywallen
     wl-clipboard
+    jellyfin-desktop
+    jellyfin-rpc
   ];
 
   fonts.packages = with pkgs; [
