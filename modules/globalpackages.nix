@@ -69,6 +69,7 @@
     jellyfin-desktop
     jellyfin-rpc
     discord
+    bun
   ];
 
   fonts.packages = with pkgs; [
