@@ -27,9 +27,17 @@
   };
 
   home.sessionVariables = {
-    PLAYWRIGHT_BROWSERS_PATH = "${pkgs.playwright-driver.browsers}";
     PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
   };
+
+  home.activation.playwrightBrowsers = pkgs.lib.hm.dag.entryAfter ["writeBoundary"] ''
+    run mkdir -p $HOME/.cache/ms-playwright/chromium-1208/chrome-linux
+    run ln -sf ${pkgs.playwright-driver.browsers}/chromium-1217/chrome-linux64/chrome \
+      $HOME/.cache/ms-playwright/chromium-1208/chrome-linux/chrome
+    run mkdir -p $HOME/.cache/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-linux64
+    run ln -sf ${pkgs.playwright-driver.browsers}/chromium_headless_shell-1217/chrome-headless-shell-linux64/chrome-headless-shell \
+      $HOME/.cache/ms-playwright/chromium_headless_shell-1208/chrome-headless-shell-linux64/chrome-headless-shell
+  '';
 
   programs.home-manager.enable = true;
 }
