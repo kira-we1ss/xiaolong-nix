@@ -70,6 +70,7 @@
     jellyfin-rpc
     discord
     bun
+    chromium
   ];
 
   fonts.packages = with pkgs; [
