@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ pkgs, lib, ... }:
 
 {
   home.username = "kweiss";
@@ -30,7 +30,7 @@
     PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
   };
 
-  home.activation.playwrightBrowsers = pkgs.lib.hm.dag.entryAfter ["writeBoundary"] ''
+  home.activation.playwrightBrowsers = lib.hm.dag.entryAfter ["writeBoundary"] ''
     run mkdir -p $HOME/.cache/ms-playwright/chromium-1208/chrome-linux
     run ln -sf ${pkgs.playwright-driver.browsers}/chromium-1217/chrome-linux64/chrome \
       $HOME/.cache/ms-playwright/chromium-1208/chrome-linux/chrome
