@@ -70,7 +70,7 @@
     jellyfin-rpc
     discord
     bun
-    chromium
+    playwright-driver.browsers
   ];
 
   fonts.packages = with pkgs; [
