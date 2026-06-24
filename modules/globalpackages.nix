@@ -71,6 +71,7 @@
     discord
     bun
     playwright-driver.browsers
+    figma-linux
   ];
 
   fonts.packages = with pkgs; [
