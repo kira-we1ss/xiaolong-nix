@@ -72,6 +72,8 @@
     bun
     playwright-driver.browsers
     figma-linux
+    nodejs
+    pnpm
   ];
 
   fonts.packages = with pkgs; [
