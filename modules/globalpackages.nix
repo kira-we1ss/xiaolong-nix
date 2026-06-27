@@ -74,6 +74,7 @@
     figma-linux
     nodejs
     pnpm
+    filezilla
   ];
 
   fonts.packages = with pkgs; [
