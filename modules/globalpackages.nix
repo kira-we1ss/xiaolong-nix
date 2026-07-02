@@ -75,6 +75,8 @@
     nodejs
     pnpm
     filezilla
+    tailscale
+    tailscale-gui
   ];
 
   fonts.packages = with pkgs; [

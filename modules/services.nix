@@ -43,6 +43,7 @@
   services.zapret.enable = true;
   services.resolved.enable = true;
   services.netbird.enable = true;
+  services.tailscale.enable = true;
   security.pam.services.kwallet = {
     enable = true;
   };
