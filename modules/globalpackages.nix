@@ -76,6 +76,7 @@
     pnpm
     filezilla
     tailscale
+    finamp
   ];
 
   fonts.packages = with pkgs; [
