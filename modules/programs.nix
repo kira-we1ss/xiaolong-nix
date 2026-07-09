@@ -9,6 +9,7 @@
       enable = true;
     };
   };
+  programs.niri.enable = true;
   programs.gamemode.enable = true;
   programs.kdeconnect.enable = true;
   programs.helium.enable = true;
