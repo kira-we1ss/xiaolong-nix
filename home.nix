@@ -10,6 +10,7 @@
     thunderbird
     qbittorrent
     davinci-resolve
+    swaybg
   ];
 
   # Fish aliases
