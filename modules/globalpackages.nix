@@ -77,6 +77,7 @@
     filezilla
     tailscale
     finamp
+    swaybg
   ];
 
   fonts.packages = with pkgs; [
