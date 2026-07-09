@@ -30,7 +30,7 @@
     PLAYWRIGHT_SKIP_VALIDATE_HOST_REQUIREMENTS = "true";
   };
 
-  home.activation.playwrightBrowsers = lib.hm.dag.entryAfter ["writeBoundary"] ''
+  home.activation.playwrightBrowsers = lib.hm.dag.entryAfter [ "writeBoundary" ] ''
     run mkdir -p $HOME/.cache/ms-playwright/chromium-1208/chrome-linux
     run ln -sf ${pkgs.playwright-driver.browsers}/chromium-1217/chrome-linux64/chrome \
       $HOME/.cache/ms-playwright/chromium-1208/chrome-linux/chrome
@@ -40,4 +40,11 @@
   '';
 
   programs.home-manager.enable = true;
+  programs.alacritty.enable = true; # Super+T in the default setting (terminal)
+  programs.fuzzel.enable = true; # Super+D in the default setting (app launcher)
+  programs.swaylock.enable = true; # Super+Alt+L in the default setting (screen locker)
+  programs.waybar.enable = true; # launch on startup in the default setting (bar)
+  services.mako.enable = true; # notification daemon
+  services.swayidle.enable = true; # idle management daemon
+  services.polkit-gnome.enable = true; # polkit
 }
