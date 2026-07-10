@@ -78,6 +78,8 @@
     tailscale
     finamp
     swaybg
+    mtr
+    whois
   ];
 
   fonts.packages = with pkgs; [
