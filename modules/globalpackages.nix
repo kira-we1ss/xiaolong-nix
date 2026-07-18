@@ -88,5 +88,7 @@
     noto-fonts
     noto-fonts-cjk-sans
     noto-fonts-color-emoji
+    departure-mono
+    gohufont
   ];
 }
