@@ -361,7 +361,7 @@ binds {
     // Mod-Shift-/, which is usually the same as Mod-?,
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
-    Mod+Shift+H hotkey-overlay-title="Run Helium browser" { spawn "helium"; }
+    Mod+Ctrl+H hotkey-overlay-title="Run Helium browser" { spawn "helium"; }
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Run an Application: rofi-wayland" { spawn "rofi-wayland"; }
