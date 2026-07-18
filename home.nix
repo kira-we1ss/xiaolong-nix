@@ -11,7 +11,7 @@
     qbittorrent
     davinci-resolve
     swaybg
-    rofi-wayland
+    rofi
     ghostty-bin
   ];
 
