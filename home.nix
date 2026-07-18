@@ -12,7 +12,7 @@
     davinci-resolve
     swaybg
     rofi
-    ghostty-bin
+    ghostty
   ];
 
   # Fish aliases
