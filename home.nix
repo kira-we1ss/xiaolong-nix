@@ -46,7 +46,7 @@
   xdg.configFile."/home/kweiss/.config/niri/config.kdl".source = ./niri/config.kdl;
   programs.swaylock.enable = true; # Super+Alt+L in the default setting (screen locker)
   # programs.waybar.enable = true; # launch on startup in the default setting (bar)
-  services.mako.enable = false; # notification daemon
+  services.mako.enable = true; # notification daemon
   services.swayidle.enable = true; # idle management daemon
   services.polkit-gnome.enable = true; # polkit
 }
