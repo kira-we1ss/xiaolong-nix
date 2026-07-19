@@ -41,7 +41,7 @@
   services.flatpak.enable = true;
   services.printing.enable = true;
   services.zapret.enable = true;
-  services.resolved.enable = true;
+  services.resolved.enable = false;
   services.netbird.enable = true;
   services.tailscale.enable = true;
   security.pam.services.kwallet = {
