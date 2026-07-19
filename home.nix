@@ -13,6 +13,9 @@
     swaybg
     rofi
     ghostty
+    nwg-panel
+    nwg-displays # optional, output/monitor management, niri-aware
+    nwg-look # optional, GTK theme switcher for consistent look
   ];
 
   # Fish aliases
