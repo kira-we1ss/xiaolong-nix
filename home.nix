@@ -16,6 +16,7 @@
     nwg-panel
     nwg-displays
     nwg-look
+    vicinae
   ];
 
   # Fish aliases
