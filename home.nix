@@ -29,6 +29,7 @@
       cleanup = "sudo nix-collect-garbage -d";
     };
     interactiveShellInit = ''
+      set -u fish_greeting ""
       hyfetch
     '';
   };
