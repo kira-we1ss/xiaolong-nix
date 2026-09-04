@@ -80,6 +80,7 @@
     swaybg
     mtr
     whois
+    ansible
   ];
 
   fonts.packages = with pkgs; [
