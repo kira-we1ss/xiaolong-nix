@@ -191,30 +191,13 @@
         "type": "github"
       }
     },
-    "nixpkgs_4": {
-      "locked": {
-        "lastModified": 1787900134,
-        "narHash": "sha256-VYXO0XZlgj06dxJZRhrD3WoSsvq/c7+/Akyoa22pefw=",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "83199d0d373dd3ac2b9a1996b1d0263f76ab7a4c",
-        "type": "github"
-      },
-      "original": {
-        "owner": "NixOS",
-        "ref": "nixos-unstable",
-        "repo": "nixpkgs",
-        "type": "github"
-      }
-    },
     "root": {
       "inputs": {
         "helium": "helium",
         "home-manager": "home-manager",
         "kopuz": "kopuz",
         "nix-cachyos-kernel": "nix-cachyos-kernel",
-        "nixpkgs": "nixpkgs_3",
-        "zapret": "zapret"
+        "nixpkgs": "nixpkgs_3"
       }
     },
     "rust-overlay": {
@@ -235,41 +218,6 @@
       "original": {
         "owner": "oxalica",
         "repo": "rust-overlay",
-        "type": "github"
-      }
-    },
-    "zapret": {
-      "inputs": {
-        "nixpkgs": "nixpkgs_4",
-        "zapret-src": "zapret-src"
-      },
-      "locked": {
-        "lastModified": 1778159173,
-        "narHash": "sha256-Huav5KDTGEwQi33HqrRu9PDnVodGhHPRsmdlAVV24BY=",
-        "owner": "kira-we1ss",
-        "repo": "zapret.installer-nix",
-        "rev": "248c747758f8cfcfdeddabacda7f44eef0165b27",
-        "type": "github"
-      },
-      "original": {
-        "owner": "kira-we1ss",
-        "repo": "zapret.installer-nix",
-        "type": "github"
-      }
-    },
-    "zapret-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1784614671,
-        "narHash": "sha256-fwwfEEH0fE4mRapN2Q3Xc7QGAmBM1un1P0tdDzmJnRk=",
-        "owner": "bol-van",
-        "repo": "zapret",
-        "rev": "87e058624c72863db53bdaf7fb6f16576dddb6ab",
-        "type": "github"
-      },
-      "original": {
-        "owner": "bol-van",
-        "repo": "zapret",
         "type": "github"
       }
     }

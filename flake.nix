@@ -7,7 +7,6 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    zapret.url = "github:kira-we1ss/zapret.installer-nix";
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
     helium = {
       url = "github:oxcl/nix-flake-helium-browser";
@@ -24,7 +23,6 @@
       nixpkgs,
       home-manager,
       nix-cachyos-kernel,
-      zapret,
       helium,
       kopuz,
       ...
@@ -45,7 +43,6 @@
           )
 
           ./hardware-configuration.nix
-          zapret.nixosModules.default
           helium.nixosModules.default
           ./modules/boot.nix
           ./modules/hardware.nix
