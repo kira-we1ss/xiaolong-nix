@@ -76,7 +76,7 @@
     pnpm
     filezilla
     tailscale
-    finamp
+    feishin
     swaybg
     mtr
     whois
