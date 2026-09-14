@@ -81,6 +81,10 @@
     mtr
     whois
     ansible
+    amdctl
+    stress-ng
+    lm_sensors
+    ryzenadj
   ];
 
   fonts.packages = with pkgs; [

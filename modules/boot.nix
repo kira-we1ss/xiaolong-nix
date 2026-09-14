@@ -7,6 +7,7 @@
 
   # CachyOS kernel
   boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+  boot.kernelModules = [ "msr" ];
 
   # Cross-compilation support
   boot.binfmt.emulatedSystems = [ "aarch64-linux" ];

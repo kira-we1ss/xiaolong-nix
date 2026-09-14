@@ -56,6 +56,7 @@
           ./modules/nix.nix
           ./modules/overlays.nix
           ./modules/hosts.nix
+          ./modules/undervolt.nix
           home-manager.nixosModules.home-manager
           {
             home-manager.useGlobalPkgs = true;
