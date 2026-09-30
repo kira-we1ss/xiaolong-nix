@@ -2,8 +2,16 @@
   pkgs,
   helium,
   kopuz,
+  nixpkgs-unstable,
   ...
 }:
+
+let
+  unstable = import nixpkgs-unstable {
+    system = pkgs.stdenv.hostPlatform.system;
+    config.allowUnfree = true; # only needed if the package is unfree
+  };
+in
 
 {
   environment.systemPackages = with pkgs; [
@@ -27,10 +35,10 @@
     rsync
     vscodium
     claude-code
-    opencode
+    unstable.opencode
     git
-    netbird
-    netbird-ui
+    unstable.netbird
+    unstable.netbird-ui
     dig
     wine-staging
     fastfetch
@@ -39,6 +47,7 @@
     python3
     unzip
     zip
+    unrar
     gparted
     binutils
     usbutils

@@ -15,6 +15,7 @@
     kopuz = {
       url = "github:temidaradev/kopuz";
     };
+    nixpkgs-unstable.url = "github:NixOS/nixpkgs/nixos-unstable";
   };
 
   outputs =
@@ -25,6 +26,7 @@
       nix-cachyos-kernel,
       helium,
       kopuz,
+      nixpkgs-unstable,
       ...
     }:
     {
@@ -32,6 +34,7 @@
         specialArgs = {
           inherit helium;
           inherit kopuz;
+          inherit nixpkgs-unstable;
         };
         modules = [
           (

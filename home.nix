@@ -24,7 +24,7 @@
     enable = true;
     shellAliases = {
       zed = "zeditor";
-      rebuild = "sudo nixos-rebuild switch --flake path:/etc/nixos#xiaolong-nix";
+      rebuild = "sudo nixos-rebuild switch --flake path:/etc/nixos#xiaolong-nix --log-format internal-json -v |& nom --json";
       update = "sudo nix flake update --flake path:/etc/nixos";
       cleanup = "sudo nix-collect-garbage -d";
     };
