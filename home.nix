@@ -25,8 +25,9 @@
     shellAliases = {
       zed = "zeditor";
       rebuild = "sudo nixos-rebuild switch --flake path:/etc/nixos#xiaolong-nix --log-format internal-json -v |& nom --json";
-      update = "sudo nix flake update --flake path:/etc/nixos";
+      update = "sudo nix flake update --flake path:/etc/nixos --log-format internal-json -v |& nom --json";
       cleanup = "sudo nix-collect-garbage -d";
+      profile_upgrade = "nix profile upgrade --all --log-format internal-json -v |& nom --json";
     };
     interactiveShellInit = ''
       set -u fish_greeting ""

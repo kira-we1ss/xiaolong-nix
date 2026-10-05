@@ -94,6 +94,7 @@ in
     stress-ng
     lm_sensors
     ryzenadj
+    libreoffice-fresh
   ];
 
   fonts.packages = with pkgs; [
