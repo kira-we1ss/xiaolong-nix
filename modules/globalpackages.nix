@@ -95,6 +95,16 @@ in
     lm_sensors
     ryzenadj
     libreoffice-fresh
+    kubectl
+    kubernetes-helm
+    cilium-cli
+    kubeseal
+    argocd
+    sops
+    age
+    ssh-to-age
+    dnsutils
+    jq
   ];
 
   fonts.packages = with pkgs; [
