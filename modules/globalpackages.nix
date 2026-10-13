@@ -107,6 +107,8 @@ in
     jq
   ];
 
+  environment.sessionVariables.KUBECONFIG = "/home/kweiss/.kube/config";
+
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
     nerd-fonts.fira-code

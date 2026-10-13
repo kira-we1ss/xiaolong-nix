@@ -364,7 +364,8 @@ binds {
     // shows a list of important hotkeys.
     Mod+Shift+Slash { show-hotkey-overlay; }
     Super+H hotkey-overlay-title="Run Helium browser" { spawn "helium"; }
-    Super+M hotkey-overlay-title="Run Mattermost" { spawn "flatpak" "run" "com.mattermost.Desktop"; }
+    Super+M hotkey-overlay-title="Run Mattermost" { spawn "flatpak" "run" "com.mattermost.Desktop" "--proxy-server=socks5://127.0.0.1:1055"; }
+    Super+J hotkey-overlay-title="Run Helium browser(work-profile)" { spawn "helium" "--proxy-server=socks5://127.0.0.1:1055" "--user-data-dir=/home/kweiss/helium"; }
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: ghostty" { spawn "ghostty"; }
     Mod+D hotkey-overlay-title="Open App Launcher: vicinae" { spawn "vicinae" "toggle"; }

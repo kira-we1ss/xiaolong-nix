@@ -42,7 +42,13 @@
   services.printing.enable = true;
   services.resolved.enable = false;
   services.netbird.enable = true;
-  services.tailscale.enable = true;
+  services.tailscale = {
+    enable = true;
+    interfaceName = "userspace-networking";
+    extraDaemonFlags = [
+      "--socks5-server=localhost:1055"
+    ];
+  };
   security.pam.services.kwallet = {
     enable = true;
   };
