@@ -1,2 +1,3 @@
 result
 .direnv
+modules/hosts.nix

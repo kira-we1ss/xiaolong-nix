@@ -5,8 +5,9 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
-  # CachyOS kernel
-  boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+  # 2026-10-19: CachyOS kernel removed - xddxdd's infra (incl. attic signing key)
+  # compromised, see nix-cachyos-kernel issue #110. Stock nixpkgs kernel instead.
+  boot.kernelPackages = pkgs.linuxPackages;
   boot.kernelModules = [ "msr" ];
 
   # Cross-compilation support

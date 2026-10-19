@@ -7,7 +7,8 @@
       url = "github:nix-community/home-manager/release-26.05";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel/release";
+    # 2026-10-19: removed nix-cachyos-kernel (xddxdd) - maintainer's servers
+    # compromised (incl. attic signing key), see repo issue #110
     helium = {
       url = "github:oxcl/nix-flake-helium-browser";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -23,7 +24,6 @@
       self,
       nixpkgs,
       home-manager,
-      nix-cachyos-kernel,
       helium,
       kopuz,
       nixpkgs-unstable,
@@ -40,7 +40,6 @@
           (
             { ... }:
             {
-              nixpkgs.overlays = [ nix-cachyos-kernel.overlays.pinned ];
               nixpkgs.hostPlatform = "x86_64-linux";
             }
           )

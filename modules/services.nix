@@ -47,6 +47,7 @@
     interfaceName = "userspace-networking";
     extraDaemonFlags = [
       "--socks5-server=localhost:1055"
+      "--outbound-http-proxy-listen=localhost:1056"
     ];
   };
   security.pam.services.kwallet = {

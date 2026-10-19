@@ -105,9 +105,10 @@ in
     ssh-to-age
     dnsutils
     jq
+    rustlings
   ];
 
-  environment.sessionVariables.KUBECONFIG = "/home/kweiss/.kube/config";
+  environment.sessionVariables.KUBECONFIG = "/home/kweiss/.kube/config:/home/kweiss/.kube/config-himeko";
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
