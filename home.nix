@@ -31,7 +31,7 @@
     };
     interactiveShellInit = ''
       set -u fish_greeting ""
-      hyfetch
+      fastfetch
     '';
   };
 
