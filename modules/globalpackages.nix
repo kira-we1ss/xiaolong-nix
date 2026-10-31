@@ -106,6 +106,7 @@ in
     dnsutils
     jq
     rustlings
+    moonlight-qt
   ];
 
   environment.sessionVariables.KUBECONFIG = "/home/kweiss/.kube/config:/home/kweiss/.kube/config-himeko";
@@ -118,5 +119,6 @@ in
     noto-fonts-color-emoji
     departure-mono
     gohufont
+    monocraft
   ];
 }
