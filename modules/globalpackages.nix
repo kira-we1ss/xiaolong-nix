@@ -59,7 +59,7 @@ in
     nixd
     nil
     distrobox
-    helium.packages.${system}.default
+    helium.packages.x86_64-linux.default
     kopuz.packages.${system}.default
     cloc
     poedit

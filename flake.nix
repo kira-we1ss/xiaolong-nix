@@ -10,7 +10,7 @@
     # 2026-10-19: removed nix-cachyos-kernel (xddxdd) - maintainer's servers
     # compromised (incl. attic signing key), see repo issue #110
     helium = {
-      url = "github:oxcl/nix-flake-helium-browser";
+      url = "github:amaanq/helium-flake";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     kopuz = {
@@ -45,7 +45,6 @@
           )
 
           ./hardware-configuration.nix
-          helium.nixosModules.default
           ./modules/boot.nix
           ./modules/hardware.nix
           ./modules/networking.nix
