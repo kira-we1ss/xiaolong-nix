@@ -107,6 +107,7 @@ in
     jq
     rustlings
     moonlight-qt
+    mattermost-desktop
   ];
 
   environment.sessionVariables.KUBECONFIG = "/home/kweiss/.kube/config:/home/kweiss/.kube/config-himeko";
